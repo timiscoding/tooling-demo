@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run test && parcel build src/index.html",
+    "test": "node tests/*.js"
   },
   "keywords": [],
   "author": "Timothy Tsui <timiscoding@gmail.com> (https://github.com/timiscoding)",
   "license": "MIT",
   "devDependencies": {
+    "axios": "0.19.2",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.19.0",
